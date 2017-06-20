@@ -19,6 +19,7 @@
 		3F4938A11EF8C16D008657EE /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A01EF8C16D008657EE /* UITableView+Extension.m */; };
 		3F4938A41EF8C2F2008657EE /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A31EF8C2F2008657EE /* UIViewController+Extension.m */; };
 		3F4938A71EF8C894008657EE /* UiCollectionView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A61EF8C894008657EE /* UiCollectionView+Extension.m */; };
+		3F4938AA1EF8CA37008657EE /* UIColor+Customize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A91EF8CA37008657EE /* UIColor+Customize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		3F4938A31EF8C2F2008657EE /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
 		3F4938A51EF8C894008657EE /* UiCollectionView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UiCollectionView+Extension.h"; sourceTree = "<group>"; };
 		3F4938A61EF8C894008657EE /* UiCollectionView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UiCollectionView+Extension.m"; sourceTree = "<group>"; };
+		3F4938A81EF8CA37008657EE /* UIColor+Customize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Customize.h"; sourceTree = "<group>"; };
+		3F4938A91EF8CA37008657EE /* UIColor+Customize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Customize.m"; sourceTree = "<group>"; };
 		6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.release.xcconfig"; sourceTree = "<group>"; };
 		911762159C17E8C5A87BC5C2 /* Pods_ToriCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToriCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 				3F4938A31EF8C2F2008657EE /* UIViewController+Extension.m */,
 				3F4938A51EF8C894008657EE /* UiCollectionView+Extension.h */,
 				3F4938A61EF8C894008657EE /* UiCollectionView+Extension.m */,
+				3F4938A81EF8CA37008657EE /* UIColor+Customize.h */,
+				3F4938A91EF8CA37008657EE /* UIColor+Customize.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4938A41EF8C2F2008657EE /* UIViewController+Extension.m in Sources */,
+				3F4938AA1EF8CA37008657EE /* UIColor+Customize.m in Sources */,
 				3F4938A11EF8C16D008657EE /* UITableView+Extension.m in Sources */,
 				3F49389A1EF8BD84008657EE /* TRCLoginViewController.m in Sources */,
 				3F4938A71EF8C894008657EE /* UiCollectionView+Extension.m in Sources */,
