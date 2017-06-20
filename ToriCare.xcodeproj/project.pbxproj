@@ -18,6 +18,7 @@
 		3F49389D1EF8BDE4008657EE /* TRCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F49389C1EF8BDE4008657EE /* TRCLoginViewController.xib */; };
 		3F4938A11EF8C16D008657EE /* UITableView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A01EF8C16D008657EE /* UITableView+Extension.m */; };
 		3F4938A41EF8C2F2008657EE /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A31EF8C2F2008657EE /* UIViewController+Extension.m */; };
+		3F4938A71EF8C894008657EE /* UiCollectionView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938A61EF8C894008657EE /* UiCollectionView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		3F4938A01EF8C16D008657EE /* UITableView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extension.m"; sourceTree = "<group>"; };
 		3F4938A21EF8C2F2008657EE /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
 		3F4938A31EF8C2F2008657EE /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		3F4938A51EF8C894008657EE /* UiCollectionView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UiCollectionView+Extension.h"; sourceTree = "<group>"; };
+		3F4938A61EF8C894008657EE /* UiCollectionView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UiCollectionView+Extension.m"; sourceTree = "<group>"; };
 		6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.release.xcconfig"; sourceTree = "<group>"; };
 		911762159C17E8C5A87BC5C2 /* Pods_ToriCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToriCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				3F4938A01EF8C16D008657EE /* UITableView+Extension.m */,
 				3F4938A21EF8C2F2008657EE /* UIViewController+Extension.h */,
 				3F4938A31EF8C2F2008657EE /* UIViewController+Extension.m */,
+				3F4938A51EF8C894008657EE /* UiCollectionView+Extension.h */,
+				3F4938A61EF8C894008657EE /* UiCollectionView+Extension.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				3F4938A41EF8C2F2008657EE /* UIViewController+Extension.m in Sources */,
 				3F4938A11EF8C16D008657EE /* UITableView+Extension.m in Sources */,
 				3F49389A1EF8BD84008657EE /* TRCLoginViewController.m in Sources */,
+				3F4938A71EF8C894008657EE /* UiCollectionView+Extension.m in Sources */,
 				3F4938901EF8BC1A008657EE /* TRCBaseViewController.m in Sources */,
 				3F49388A1EF8BA4E008657EE /* main.m in Sources */,
 				3F4938861EF8BA4E008657EE /* AppDelegate.m in Sources */,
