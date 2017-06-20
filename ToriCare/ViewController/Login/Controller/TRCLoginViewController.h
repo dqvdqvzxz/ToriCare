@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TRCLoginViewController.h
 //  ToriCare
 //
 //  Created by Mèo Béo on 6/20/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TRCLoginViewController : UIViewController
 
 @end
-

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+//view controller
+#import "TRCLoginViewController.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
