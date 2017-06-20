@@ -14,6 +14,10 @@
 #import "UiCollectionView+Extension.h"
 #import "UIColor+Customize.h"
 
+//constant
+#import "TRCDefine_Config.h"
+#import "TRCDefine_String.h"
+
 @interface TRCBaseViewController : UIViewController
 
 @end

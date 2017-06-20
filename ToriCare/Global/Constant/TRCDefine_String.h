@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+//other define
 #import "TRCDefine_Config.h"
 
+
 //title
-#define kTitleHome          LocalizedString(@"Home")
+#define kTitleHome              LocalizeString(@"Home")
+
+//string
+#define kAlertMessage           LocalizeString(@"Message")
+#define kAlertOK                LocalizeString(@"OK")

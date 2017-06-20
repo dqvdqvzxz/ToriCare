@@ -11,7 +11,7 @@
 @implementation UIViewController (Extension)
 
 -(void)setCustomTitle:(NSString *)title{
-    NSDictionary *attributes = @{NSForegroundColorAttributeName : [UIColor whiteColor],
+    NSDictionary *attributes = @{NSForegroundColorAttributeName : [UIColor blackColor],
                                  NSFontAttributeName : [UIFont systemFontOfSize:20.0f]};
     NSMutableAttributedString *titleString = [[NSMutableAttributedString alloc] initWithString:title attributes:attributes];
     UILabel *titleLabel = [UILabel new];

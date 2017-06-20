@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+//other define
+#import "TRCDefine_String.h"
+
 //device
 #define IS_IPAD         (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_PHONE        (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -34,5 +37,7 @@
 //config
 #define ExtendNSLog(fmt, ...)       NSLog((@"\n%s [Line %d] -:- " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define LocalizeString(string)      (NSLocalizedString(string, nil).length == 0)?(string):(NSLocalizedString(string, nil))
+#define ALERT(M)                    {UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kAlertMessage message:M delegate:nil cancelButtonTitle:nil otherButtonTitles:kAlertOK, nil];[alert show];}
+#define ALERT2(T, M)                    {UIAlertView *alert = [[UIAlertView alloc] initWithTitle:T message:M delegate:nil cancelButtonTitle:nil otherButtonTitles:kAlertOK, nil];[alert show];}
 
 

@@ -11,6 +11,9 @@
 //view controller
 #import "TRCLoginViewController.h"
 
+//libraries
+#import <AFNetworking/AFNetworking.h>
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

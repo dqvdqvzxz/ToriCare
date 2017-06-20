@@ -17,13 +17,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //set the first xib run when open app
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     TRCLoginViewController *vc = [[TRCLoginViewController alloc] initWithNibName:@"TRCLoginViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
-    
     [self.window makeKeyAndVisible];
+    
+    //check internet status
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
+        ExtendNSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+        if([AFStringFromNetworkReachabilityStatus(status) isEqual: @"Not Reachable"]){
+            ALERT(AFStringFromNetworkReachabilityStatus(status));
+        }
+    
+        if([AFNetworkReachabilityManager sharedManager].reachable){
+            ExtendNSLog(@"Internet connection started again !");
+        }else{
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert"
+                                                                           message:@"Error Retrieving Data"
+                                                                    preferredStyle:UIAlertControllerStyleActionSheet];
+            UIAlertAction *firstAction = [UIAlertAction actionWithTitle:@"OK"
+                                                                  style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+                                                                      NSLog(@"You pressed button OK");
+                                                                  }];
+            [alert addAction:firstAction];
+        }
+    }];
+    
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    });
     
     return YES;
 }
