@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34B6903C2CAEAA8B8C30901D /* Pods_ToriCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911762159C17E8C5A87BC5C2 /* Pods_ToriCare.framework */; };
 		3F4938861EF8BA4E008657EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938761EF8BA4E008657EE /* AppDelegate.m */; };
 		3F4938871EF8BA4E008657EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F49387D1EF8BA4E008657EE /* Assets.xcassets */; };
 		3F4938881EF8BA4E008657EE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F49387F1EF8BA4E008657EE /* Info.plist */; };
@@ -15,7 +16,6 @@
 		3F4938901EF8BC1A008657EE /* TRCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F49388F1EF8BC1A008657EE /* TRCBaseViewController.m */; };
 		3F49389A1EF8BD84008657EE /* TRCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938981EF8BD84008657EE /* TRCLoginViewController.m */; };
 		3F49389D1EF8BDE4008657EE /* TRCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F49389C1EF8BDE4008657EE /* TRCLoginViewController.xib */; };
-		4CA9D99E6E263CBED5DC624A /* libPods-ToriCare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		3F4938971EF8BD84008657EE /* TRCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCLoginViewController.h; sourceTree = "<group>"; };
 		3F4938981EF8BD84008657EE /* TRCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCLoginViewController.m; sourceTree = "<group>"; };
 		3F49389C1EF8BDE4008657EE /* TRCLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRCLoginViewController.xib; sourceTree = "<group>"; };
-		53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToriCare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.release.xcconfig"; sourceTree = "<group>"; };
+		911762159C17E8C5A87BC5C2 /* Pods_ToriCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToriCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA9D99E6E263CBED5DC624A /* libPods-ToriCare.a in Frameworks */,
+				34B6903C2CAEAA8B8C30901D /* Pods_ToriCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +51,7 @@
 		002EA3994F4A0C95B4705218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */,
+				911762159C17E8C5A87BC5C2 /* Pods_ToriCare.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
