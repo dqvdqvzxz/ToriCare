@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TRCBaseViewController : NSObject
+//extensions
+#import "UITableView+Extension.h"
+#import "UIViewController+Extension.h"
+#import "UiCollectionView+Extension.h"
+#import "UIColor+Customize.h"
+
+@interface TRCBaseViewController : UIViewController
 
 @end

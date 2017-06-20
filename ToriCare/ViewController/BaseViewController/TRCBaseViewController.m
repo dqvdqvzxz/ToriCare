@@ -10,4 +10,8 @@
 
 @implementation TRCBaseViewController
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+}
+
 @end

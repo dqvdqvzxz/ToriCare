@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRCLoginViewController : UIViewController
+//base view controller
+#import "TRCBaseViewController.h"
+
+@interface TRCLoginViewController : TRCBaseViewController
 
 @end
