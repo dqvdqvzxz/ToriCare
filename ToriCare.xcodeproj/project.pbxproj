@@ -13,6 +13,7 @@
 		3F4938681EF8B6A2008657EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4938661EF8B6A2008657EE /* Main.storyboard */; };
 		3F49386A1EF8B6A2008657EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4938691EF8B6A2008657EE /* Assets.xcassets */; };
 		3F49386D1EF8B6A2008657EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F49386B1EF8B6A2008657EE /* LaunchScreen.storyboard */; };
+		4CA9D99E6E263CBED5DC624A /* libPods-ToriCare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		3F4938691EF8B6A2008657EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F49386C1EF8B6A2008657EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F49386E1EF8B6A2008657EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToriCare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.release.xcconfig"; sourceTree = "<group>"; };
+		A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA9D99E6E263CBED5DC624A /* libPods-ToriCare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002EA3994F4A0C95B4705218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F4938511EF8B6A2008657EE = {
 			isa = PBXGroup;
 			children = (
 				3F49385C1EF8B6A2008657EE /* ToriCare */,
 				3F49385B1EF8B6A2008657EE /* Products */,
+				B23751C4CF5892CFD7A6FA6F /* Pods */,
+				002EA3994F4A0C95B4705218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B23751C4CF5892CFD7A6FA6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */,
+				6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F4938711EF8B6A2008657EE /* Build configuration list for PBXNativeTarget "ToriCare" */;
 			buildPhases = (
+				E282C11477CC16CD9C1E20EE /* [CP] Check Pods Manifest.lock */,
 				3F4938561EF8B6A2008657EE /* Sources */,
 				3F4938571EF8B6A2008657EE /* Frameworks */,
 				3F4938581EF8B6A2008657EE /* Resources */,
+				F94B8DD735EEEE64011536AF /* [CP] Embed Pods Frameworks */,
+				DC12511C7501D5CF50B06B4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC12511C7501D5CF50B06B4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E282C11477CC16CD9C1E20EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F94B8DD735EEEE64011536AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F4938561EF8B6A2008657EE /* Sources */ = {
@@ -273,6 +348,7 @@
 		};
 		3F4938721EF8B6A2008657EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2L8CWRYK58;
@@ -286,6 +362,7 @@
 		};
 		3F4938731EF8B6A2008657EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2L8CWRYK58;
