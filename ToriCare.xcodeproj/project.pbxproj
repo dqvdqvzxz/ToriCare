@@ -14,6 +14,7 @@
 		3F49388A1EF8BA4E008657EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938811EF8BA4E008657EE /* main.m */; };
 		3F49388B1EF8BA4E008657EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4938831EF8BA4E008657EE /* Main.storyboard */; };
 		3F49388C1EF8BA4E008657EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4938851EF8BA4E008657EE /* ViewController.m */; };
+		3F4938901EF8BC1A008657EE /* TRCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F49388F1EF8BC1A008657EE /* TRCBaseViewController.m */; };
 		4CA9D99E6E263CBED5DC624A /* libPods-ToriCare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		3F4938831EF8BA4E008657EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3F4938841EF8BA4E008657EE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F4938851EF8BA4E008657EE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F49388E1EF8BC1A008657EE /* TRCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCBaseViewController.h; sourceTree = "<group>"; };
+		3F49388F1EF8BC1A008657EE /* TRCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCBaseViewController.m; sourceTree = "<group>"; };
 		53A368BD7BA3CA8D0418F4D5 /* libPods-ToriCare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToriCare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFCB6BF76717D07AAA399D1 /* Pods-ToriCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.release.xcconfig"; sourceTree = "<group>"; };
 		A3F44C2066EEA12EBA0EDCC4 /* Pods-ToriCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToriCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToriCare/Pods-ToriCare.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,11 +155,53 @@
 		3F4938821EF8BA4E008657EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3F4938931EF8BD14008657EE /* Login */,
+				3F49388D1EF8BC05008657EE /* BaseViewController */,
 				3F4938831EF8BA4E008657EE /* Main.storyboard */,
 				3F4938841EF8BA4E008657EE /* ViewController.h */,
 				3F4938851EF8BA4E008657EE /* ViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3F49388D1EF8BC05008657EE /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3F49388E1EF8BC1A008657EE /* TRCBaseViewController.h */,
+				3F49388F1EF8BC1A008657EE /* TRCBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		3F4938931EF8BD14008657EE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3F4938941EF8BD14008657EE /* Controller */,
+				3F4938951EF8BD14008657EE /* Model */,
+				3F4938961EF8BD14008657EE /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3F4938941EF8BD14008657EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F4938951EF8BD14008657EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F4938961EF8BD14008657EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B23751C4CF5892CFD7A6FA6F /* Pods */ = {
@@ -197,6 +242,7 @@
 		3F4938521EF8B6A2008657EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TRC;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Mèo Béo";
 				TargetAttributes = {
@@ -293,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F49388C1EF8BA4E008657EE /* ViewController.m in Sources */,
+				3F4938901EF8BC1A008657EE /* TRCBaseViewController.m in Sources */,
 				3F49388A1EF8BA4E008657EE /* main.m in Sources */,
 				3F4938861EF8BA4E008657EE /* AppDelegate.m in Sources */,
 			);
