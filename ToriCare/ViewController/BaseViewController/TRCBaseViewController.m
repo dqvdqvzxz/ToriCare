@@ -14,4 +14,10 @@
     [super viewDidLoad];
 }
 
+//dismiss keyboard
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
+}
+
 @end

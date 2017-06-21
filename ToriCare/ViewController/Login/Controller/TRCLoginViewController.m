@@ -14,26 +14,76 @@
 
 @implementation TRCLoginViewController
 
+@synthesize lblUsername;
+@synthesize txtUsername;
+@synthesize lblPassword;
+@synthesize txtPassword;
+@synthesize btnLogin;
+@synthesize btnLoginWithFB;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    [self setCustomTitle:kTitleHome];
+
+    [self customBackButton];
     
+    [self setCustomTitle:kTitleLogin];
+    
+    [self configUI];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Config UI
+-(void)configUI{
+    lblUsername.text = kLblUsername;
+    
+    [txtUsername setPlaceholder:kLblUsername];
+    
+    lblPassword.text = kLblPassword;
+    
+    [txtPassword setPlaceholder:kLblPassword];
+    
+    [btnLogin setTitle:kTitleLogin forState:UIControlStateNormal];
+    btnLogin.layer.borderWidth = 1.0f;
+    
+    [btnLoginWithFB setTitle:kBtnLoginWithFB forState:UIControlStateNormal];
+    btnLoginWithFB.layer.backgroundColor = [UIColor blueColor].CGColor;
 }
-*/
+
+
+#pragma mark - Button Action
+- (IBAction)btnLoginClick:(id)sender {
+}
+
+- (IBAction)btnLoginWithFBClick:(id)sender {
+    FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+    [loginManager logInWithPublishPermissions:@[@"publish_actions"]
+                           fromViewController:self
+                                      handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+                                          if(error){
+                                              //process error
+                                              ExtendNSLog(@"Facebook login error !");
+                                          }else if(result.isCancelled){
+                                              //handle cancellation
+                                              ExtendNSLog(@"Cancel Facebook login !");
+                                          }else{
+                                              //if you ask for multiple permissions at one, should check if specific permissions missing
+                                              [self fetchUserInfo];
+                                              ExtendNSLog(@"Get token !");
+                                          }
+                                      }];
+}
+
+-(void)fetchUserInfo{
+    if([FBSDKAccessToken currentAccessToken]){
+        ExtendNSLog(@"Token is available: %@", [[FBSDKAccessToken currentAccessToken] tokenString]);
+        _obj.userToken = [[NSString alloc] initWithString:[[FBSDKAccessToken currentAccessToken] tokenString]];
+        TRCHomeViewController *vc = [[TRCHomeViewController alloc] initWithNibName:@"TRCHomeViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
 
 @end

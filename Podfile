@@ -9,4 +9,8 @@ target 'ToriCare' do
 
 pod 'AFNetworking', '~> 3.0'
 
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
+
 end

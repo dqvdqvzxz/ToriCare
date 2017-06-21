@@ -8,9 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-//base view controller
+//view controller
 #import "TRCBaseViewController.h"
+#import "TRCHomeViewController.h"
+
+//libraries
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface TRCLoginViewController : TRCBaseViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *lblUsername;
+@property (weak, nonatomic) IBOutlet UITextField *txtUsername;
+@property (weak, nonatomic) IBOutlet UILabel *lblPassword;
+@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
+@property (weak, nonatomic) IBOutlet UIButton *btnLoginWithFB;
+
+- (IBAction)btnLoginClick:(id)sender;
+- (IBAction)btnLoginWithFBClick:(id)sender;
+
 
 @end

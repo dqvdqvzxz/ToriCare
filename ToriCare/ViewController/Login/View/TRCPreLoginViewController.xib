@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRCPreLoginViewController">
+            <connections>
+                <outlet property="btnLogin" destination="Ue0-Gs-rGk" id="gsm-0X-VlF"/>
+                <outlet property="btnRegister" destination="JL5-cD-Owl" id="Lge-B5-h8E"/>
+                <outlet property="tvPolicy" destination="Aib-YC-3tx" id="pyW-UB-F24"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="   Terms and Policies of Application" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aib-YC-3tx">
+                    <rect key="frame" x="10" y="134" width="300" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="olB-F0-6zh"/>
+                        <constraint firstAttribute="height" constant="300" id="xg2-25-cOl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue0-Gs-rGk">
+                    <rect key="frame" x="30" y="498" width="260" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnLoginClick:" destination="-1" eventType="touchUpInside" id="zq4-RF-NFM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL5-cD-Owl">
+                    <rect key="frame" x="30" y="448" width="260" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnRegisterClick:" destination="-1" eventType="touchUpInside" id="CgO-ds-p2y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ue0-Gs-rGk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8XL-qJ-V8t"/>
+                <constraint firstItem="Aib-YC-3tx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ae9-a2-0sK"/>
+                <constraint firstItem="Ue0-Gs-rGk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="DDa-rm-5No"/>
+                <constraint firstAttribute="trailing" secondItem="JL5-cD-Owl" secondAttribute="trailing" constant="30" id="ID5-V1-sFc"/>
+                <constraint firstItem="JL5-cD-Owl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oxj-eV-nfI"/>
+                <constraint firstAttribute="trailing" secondItem="Ue0-Gs-rGk" secondAttribute="trailing" constant="30" id="aR4-Z1-lZJ"/>
+                <constraint firstItem="JL5-cD-Owl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="hsI-vt-Y8v"/>
+                <constraint firstItem="Aib-YC-3tx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sLu-2D-YTs"/>
+                <constraint firstItem="JL5-cD-Owl" firstAttribute="bottom" secondItem="Ue0-Gs-rGk" secondAttribute="top" constant="-20" id="sf0-ef-afS"/>
+                <constraint firstAttribute="bottom" secondItem="Ue0-Gs-rGk" secondAttribute="bottom" constant="40" id="veO-wY-gKn"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

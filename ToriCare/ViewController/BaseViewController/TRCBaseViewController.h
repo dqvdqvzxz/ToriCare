@@ -18,6 +18,12 @@
 #import "TRCDefine_Config.h"
 #import "TRCDefine_String.h"
 
+//singleton
+#import "TRCObject.h"
+
+//view controller
+
+
 @interface TRCBaseViewController : UIViewController
 
 @end

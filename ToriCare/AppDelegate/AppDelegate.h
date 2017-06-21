@@ -9,10 +9,15 @@
 #import <UIKit/UIKit.h>
 
 //view controller
-#import "TRCLoginViewController.h"
+#import "TRCObject.h"
+#import "TRCPreLoginViewController.h"
 
 //libraries
 #import <AFNetworking/AFNetworking.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+//define
+#import "TRCDefine_Config.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
